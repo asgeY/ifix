@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.23.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.16.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iFix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iFix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCC-1f-WaJ">
+                                <rect key="frame" x="119" y="76" width="136" height="112"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="Ybq-h6-J6C">
+                                <rect key="frame" x="16" y="525" width="341" height="52"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObT-Yy-zWV">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="52"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                        <state key="normal" title="Upload"/>
+                                        <connections>
+                                            <action selector="UploadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQ8-MG-MNO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-Ko-Vke">
+                                        <rect key="frame" x="138" y="0.0" width="74" height="52"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                        <state key="normal" title="Shuffle"/>
+                                        <connections>
+                                            <action selector="UIShuffle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGe-iB-aJL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeW-ML-ScW">
+                                        <rect key="frame" x="277" y="0.0" width="64" height="52"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="UIReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0C-ue-UIv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="341" id="Ube-9z-g8K"/>
+                                    <constraint firstAttribute="height" constant="52" id="gAN-Iu-6No"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Rh-PY-yda">
+                                <rect key="frame" x="21" y="228" width="330" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="236" id="Q0y-Vf-PdW"/>
+                                    <constraint firstAttribute="width" constant="330" id="ekm-yZ-T5C"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71390795705158916" green="0.74883627362104166" blue="0.78626665609137059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ybq-h6-J6C" secondAttribute="trailing" constant="18" id="AI4-F4-D6Q"/>
+                            <constraint firstItem="Ybq-h6-J6C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JFy-Up-8rK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Rh-PY-yda" secondAttribute="trailing" constant="24" id="Jbx-ne-901"/>
+                            <constraint firstItem="Ybq-h6-J6C" firstAttribute="top" secondItem="6Rh-PY-yda" secondAttribute="bottom" constant="61" id="MBf-9N-LGE"/>
+                            <constraint firstItem="6Rh-PY-yda" firstAttribute="top" secondItem="lCC-1f-WaJ" secondAttribute="bottom" constant="40" id="MIg-1S-HJV"/>
+                            <constraint firstItem="Ybq-h6-J6C" firstAttribute="top" secondItem="6Rh-PY-yda" secondAttribute="bottom" constant="61" id="Mg3-Zd-n1j"/>
+                            <constraint firstItem="lCC-1f-WaJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="P22-zg-mkO"/>
+                            <constraint firstItem="6Rh-PY-yda" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="VYm-06-hPu"/>
+                            <constraint firstItem="lCC-1f-WaJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="YRV-mR-trM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lCC-1f-WaJ" secondAttribute="trailing" constant="120" id="efx-hC-GeZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lCC-1f-WaJ" secondAttribute="bottom" constant="541" id="hvV-uZ-x9O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ybq-h6-J6C" secondAttribute="bottom" constant="152" id="pvZ-oy-W0t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="UIImage" destination="6Rh-PY-yda" id="RYZ-kd-3k5"/>
+                        <outlet property="ifix" destination="lCC-1f-WaJ" id="4AI-TA-ARn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
